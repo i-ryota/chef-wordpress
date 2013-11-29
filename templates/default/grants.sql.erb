@@ -1,0 +1,3 @@
+grant all privileges on <%= node['mysql']['db'] %>.* to <%= node['mysql']['user']%>@localhost identified by '<%= node['mysql']['pwd']%>';
+
+FLUSH PRIVILEGES;
